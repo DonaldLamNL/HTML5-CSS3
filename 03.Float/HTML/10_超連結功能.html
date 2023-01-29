@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超連結其他功能</title>
+</head>
+<body>
+    <!--
+        target屬性：用來指定超連結網頁打開的位置
+        可選值：
+        _self 默認值 在當前頁面刷新並打開
+        _blank 在新的頁面打開超連結
+    -->
+    <a href="https://www.google.com/" target="_self">self超連結1</a>
+    <br>
+    <br>
+    <a href="08_超連結.html" target="_blank">blank超連結2</a>
+
+    <br>
+    <br>
+
+    <a href="#bottom">去底部</a>
+
+    <!-- 在開發中 # 可以作為超連結路徑的佔位符使用 -->
+    <a href="#">超連結</a>
+    <!-- 當 href 屬性為javascript:;的時候，點擊超連結將不會發生任何事件 -->
+    <a href="javascript:;">超連結</a>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eveniet, facere nesciunt vitae perspiciatis quidem, repudiandae minus molestiae ipsam voluptatibus sit reprehenderit dolorum molestias ut ad optio architecto corporis exercitationem neque totam. Nulla tempore quos magni maxime illo quaerat eos dolores saepe odio deleniti laborum enim voluptas cum et tempora quod repudiandae ducimus sint perferendis recusandae aperiam distinctio, aut aliquid incidunt. Commodi esse doloribus sit aspernatur inventore provident, optio ratione, iure repellendus delectus quaerat rerum praesentium incidunt distinctio maiores possimus corporis nemo officia vitae aliquid sed tempore facilis ipsam. Molestias obcaecati excepturi praesentium, accusantium facere perferendis repudiandae minima quos temporibus.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eveniet, facere nesciunt vitae perspiciatis quidem, repudiandae minus molestiae ipsam voluptatibus sit reprehenderit dolorum molestias ut ad optio architecto corporis exercitationem neque totam. Nulla tempore quos magni maxime illo quaerat eos dolores saepe odio deleniti laborum enim voluptas cum et tempora quod repudiandae ducimus sint perferendis recusandae aperiam distinctio, aut aliquid incidunt. Commodi esse doloribus sit aspernatur inventore provident, optio ratione, iure repellendus delectus quaerat rerum praesentium incidunt distinctio maiores possimus corporis nemo officia vitae aliquid sed tempore facilis ipsam. Molestias obcaecati excepturi praesentium, accusantium facere perferendis repudiandae minima quos temporibus.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eveniet, facere nesciunt vitae perspiciatis quidem, repudiandae minus molestiae ipsam voluptatibus sit reprehenderit dolorum molestias ut ad optio architecto corporis exercitationem neque totam. Nulla tempore quos magni maxime illo quaerat eos dolores saepe odio deleniti laborum enim voluptas cum et tempora quod repudiandae ducimus sint perferendis recusandae aperiam distinctio, aut aliquid incidunt. Commodi esse doloribus sit aspernatur inventore provident, optio ratione, iure repellendus delectus quaerat rerum praesentium incidunt distinctio maiores possimus corporis nemo officia vitae aliquid sed tempore facilis ipsam. Molestias obcaecati excepturi praesentium, accusantium facere perferendis repudiandae minima quos temporibus.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eveniet, facere nesciunt vitae perspiciatis quidem, repudiandae minus molestiae ipsam voluptatibus sit reprehenderit dolorum molestias ut ad optio architecto corporis exercitationem neque totam. Nulla tempore quos magni maxime illo quaerat eos dolores saepe odio deleniti laborum enim voluptas cum et tempora quod repudiandae ducimus sint perferendis recusandae aperiam distinctio, aut aliquid incidunt. Commodi esse doloribus sit aspernatur inventore provident, optio ratione, iure repellendus delectus quaerat rerum praesentium incidunt distinctio maiores possimus corporis nemo officia vitae aliquid sed tempore facilis ipsam. Molestias obcaecati excepturi praesentium, accusantium facere perferendis repudiandae minima quos temporibus.</p>
+
+    <div style="margin-top: 500px;"></div>
+
+    <!--
+        轉跳至指定位置：
+            -當 href 屬性為#的時候，點擊超連結將不會轉跳任何頁面，而是回到頁面的頂部
+            -當 href 屬性為 #目標id 的時候，便可轉跳至該 id 所在位置
+
+
+
+        id屬性（唯一不重複）
+            -每一個標籤都能添加id屬性
+            -id屬性是所有元素的唯一標識，同一個頁面中不得重複同一個id屬性
+    -->
+    <a id="bottom" href="#">回到頂部</a>
+</body>
+</html>

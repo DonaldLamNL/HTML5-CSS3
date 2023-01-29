@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                box-shadow：
+                    用來設置元素的陰影效果
+                    不會影響到可見框大小（不影響佈局）
+                box-shadow: 
+                第一個值：水平移動值(margin-left) 
+                第二個值：垂直移動值(margin-top) 
+                第三個值：陰影的模糊半徑
+                第四個值：陰影顏色 color  
+             */
+            box-shadow:  10px 10px 10px rgb(0, 0, 0,0.3);
+
+        }
+
+        .box1:hover{
+            /* 
+                outline：
+                    用來設置元素的輪廓線
+                    用法和border一模一樣，不同在輪廓不影響可見框的大小（不會影響佈局）
+             */
+            outline: 10px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 
+                border-radius：
+                    用來設置圓角
+                    border-top-left-radius
+                    border-top-right-radius
+                    border-bottom-left-radius
+                    border-bottom-right-radius
+
+                    默認為半徑一樣
+                    第一個值：水平方向的半徑
+                    第二個值：垂直方向的半徑
+
+                    border-radius規則：
+                    四個值：左上 右上 右下 左下
+                    三個值：左上 右上/左下 右下
+                    兩個值：左上/右下 右上/左下
+                    一個值：四角一樣
+             */
+             border-top-left-radius: 30px 60px;
+             border-bottom-right-radius: 30px;
+             box-shadow:10px 10px 10px black ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <br>
+    hello
+    <div class="box2"></div>
+</body>
+</html>

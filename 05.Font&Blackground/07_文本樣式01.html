@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+
+            /* 
+                text-align 文本水平對齊
+                    可選值：
+                        left    默認值，靠左對齊
+                        right   靠右對齊
+                        center  居中對齊
+                        justify 兩側對齊（左右兩邊都對齊了）
+            */
+            text-align: justify;
+            font-size: 50px;
+            border: 1px red solid;
+            
+            
+        }
+        span{
+            font-size: 20px;
+            border: 1px blue solid;
+            /* 
+            vertical-align：設置元素垂直對齊的方式
+            可選值：
+            baseline 默認值 基線對齊（文字底邊）
+            top      頂部對齊（子元素和父元素對齊的頂部）
+            bottom   底部對齊（子元素和父元素對齊的底部）
+            middle   居中對齊（子元素的底部和父元素對齊)
+            */
+            
+            vertical-align: middle;
+        }
+        p{
+            border: 1px red solid;
+            /* img的底部會有一部分空白，因為圖片沿著基線對齊 */
+        }
+        img{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, hic officia nostrum in aspernatur quam fuga totam voluptate aliquam, molestiae ipsum provident, aliquid dicta sunt? Optio earum voluptate aut explicabo?
+    </div> -->
+
+    <div>
+        Hello World <span>How are you</span>
+    </div>
+
+    <p><img src="../Exercise/Ex.Resource/Ex.01/01.jpg" alt=""></p>
+</body>
+</html>

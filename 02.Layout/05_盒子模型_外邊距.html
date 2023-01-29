@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+        width: 200px;
+        height: 200px;
+        background-color: #bfa;
+        border: red solid 5px;
+
+        /* 
+            外邊距 (margin)
+                - 不會影響盒子可見的大小
+                - 但是會影響盒子的位置（盒子和盒子間的距離）
+                - 同樣有四個方向的外邊距：
+                    margin-top      
+                        - 上外邊距：元素會向下移
+                    margin-left     
+                        - 左外邊距：元素會向右移
+                    margin-bottom   
+                        - 下外邊距：元素其下的其他元素下移動
+                    margin-right
+                        - 默認情況下設置margin-right沒有任何效果
+
+                - 因為元素在網頁中是由上到下、左到右排列
+                    所以默認情況下：
+                    設置上外邊距和左外邊距則會導致自身元素移動
+                    而設置其他則移動其他元素   
+
+                - margin 可以設置為負值
+                    若margin為負值則其會往相反方向移動     
+
+                - margin 會影響盒子實際佔網頁空間的大小    
+         */
+
+         margin-top: 100px;
+         margin-left: 50px;
+         margin-bottom: -100px;
+        }
+
+        .box2{
+            background-color: yellow;
+            width: 210px;
+            height: 210px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

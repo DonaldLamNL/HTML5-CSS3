@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Ex.Resource/css/reset.css">
+    <style>
+        .imageList{
+            width: 590px;
+            height: 470px;
+            margin: 0 auto;
+            position:relative;
+        }
+        .imageList li{
+            position: absolute;
+        }
+        .imageList li:nth-child(1){
+            z-index: 2;
+        }
+        ul li a img{
+            width: 590px;
+            height: 470px;
+        }
+        .pointer{
+            position: absolute;;
+            z-index: 999;
+            bottom: 20px;
+            left: 30px;
+        }
+        .pointer a{
+            /* 設置元素向左浮動（display can delete） */
+            float: left;
+            margin-left: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            
+            /* 將背景顏色設置到內容區裡面，而邊框和內邊框則沒有背景顏色 */
+            background-clip: content-box;
+            border: 2px  solid transparent;
+        }
+        
+        .pointer a .active , .pointer a:hover{
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 2px rgba(255, 255, 255, 0.3) solid;
+        }
+    </style>
+</head>
+<body>
+    <ul class="imageList">
+        <!-- The Images List show on the page -->
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/01.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/02.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/03.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/04.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/05.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/06.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/07.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./Ex.Resource/Ex.01/08.jpg"></a></li>
+        
+        <!-- pointer -->
+        <div class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+    
+</body>
+</html>

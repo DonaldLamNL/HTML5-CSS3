@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                通過漸變可以設置一些複雜的背景顏色，可以實現從一個顏色向其他顏色過度的效果
+                ！！！漸變是圖片，需要通過 background-image 來設置
+
+                linear-gradient() 線性漸變
+                    - 顏色沿著一條直線進行變化
+                    結構: linear-gradient()
+                        1. 顏色
+                        2. 方向 
+                            - to left / to right / to top / to bottom
+                            - deg   //deg ~ degree度數，指定旋轉的度數
+                            - turn  //turns ~ 與 deg 類似
+
+                    - 漸變可以同時指定多個顏色，多個顏色默認情況下是平均分配
+                        也可以手動指定漸變的分配
+
+             */
+             background-image: linear-gradient(red,yellow , #bfa, orange);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                - 漸變可以同時指定多個顏色，多個顏色默認情況下是平均分配
+                    也可以手動指定漸變的分配
+                    設置數值的意思是：離初始位置的距離為該顏色
+             */
+             background-image: linear-gradient(red 0px,yellow 100px,green 150px, orange 200px);
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                repeating-linear-gradient() 可以平鋪的線性漸變
+                    // background-repeat: no-repeat 不會對其造成影響
+
+             */
+            background-image: repeating-linear-gradient(red 50px, yellow 100px);
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1" style="margin-bottom: 20px;"></div>
+    <div class="box2" style="margin-bottom: 20px;"></div>
+    <div class="box3" style="margin-bottom: 20px;"></div>
+</body>
+</html>

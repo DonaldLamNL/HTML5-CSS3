@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        autocomplete="off" 關閉自動補全 
+        readonly 表單項項設置為只讀，數據會提交
+        disabled 將表單項設置為禁用，數據不會提交
+        autofocus 設置表單項自動獲取焦點
+    -->
+    <form action="./target.html" autocomplete="off">
+        <input type="text" name="username" value="hello" autofocus>
+
+        <br><br>
+
+        <input type="color">
+        <input type="email">
+
+        <br><br>
+
+        <input type="submit">
+        <!-- 重置按鈕 -->
+        <input type="reset">
+        <!-- 普通的按鈕，沒有任何作用 -->
+        <input type="button" value="按鈕">
+
+        <br><br>
+
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+        <button type="button">按鈕</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <!-- 引入重置樣式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入圖標字體庫 -->
+    <link rel="stylesheet" href="./font/css/all.css">
+    <!-- 引入當前網頁樣式表 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入公共樣式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <!-- 頂部導航條 -->
+    <!-- 頂部導航條外部容器 -->
+    <div class="topbarWrapper">
+        <!-- 內部容器 -->
+        <div class="topbar w clearfix">
+            <!-- 左側導航條 -->
+            <ul class="service">
+                <li><a href="javascript:;">小米商城</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">MIUI</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">loT</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">雲服務</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">金融</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">商品</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">小愛開放平台</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">企業團購</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">資質證照</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">協議規則</a></li>
+                <li class="line">|</li>
+                <li>
+                    <a href="javascript:;" class="app">
+                        下載app
+                        <!-- 添加一個彈出層 -->
+                        <div class="qrcode">
+                            <img src="./img/01.png">
+                            <span>小米商城app</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">Select Location</a></li>
+            </ul>
+            <!-- 購物車 -->
+            <ul class="shoppingCart">
+                <li>
+                    <a href="javascript:;">
+                        <i class="fas fa-shopping-cart"></i>
+                        購物車（0）
+                    </a>
+                </li>
+                <div class="shoppingCartContent"></div>
+            </ul>
+            <!-- 用戶信息 -->
+            <ul class="userInfo">
+                <li><a href="javascript:;">登陸</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">註冊</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">消息通知</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 創建頭部的外部容器 -->
+    <div class="headerWrapper">
+        <div class="header w clearfix">
+            <!-- 創建一個logo -->
+            <h1 class="logo" title="小米">
+                小米官網
+                <a href="/" class="home"></a>
+                <a href="/" class="mi"></a>
+            </h1>
+
+            <!-- 創建頭部導航條容器 -->
+            <div class="navWrapper">
+                <!-- 創建導航條 -->
+                <ul class="nav clearfix">
+                    <li class="allGoodsWrapper">
+                        <a class="allGoods" href="#">全部商品分類</a>
+
+                        <!-- 創建左側導航菜單 -->
+                        <ul class="leftMenu">
+                            <li>
+                                <a href="#">
+                                    手機 電話卡
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    電視 盒子
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    筆記本 平板
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    家電 插線板
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    出行 穿戴
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    智能 路由器
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    電源 配件
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    健康 兒童
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    耳機 音箱
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    生活 箱包
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="showGoods"><a href="#">小米手機</a></li>
+                    <li class="showGoods"><a href="#">Redmi紅米</a></li>
+                    <li class="showGoods"><a href="#">電視</a></li>
+                    <li class="showGoods"><a href="#">筆記本</a></li>
+                    <li class="showGoods"><a href="#">家電</a></li>
+                    <li class="showGoods"><a href="#">路由器</a></li>
+                    <li class="showGoods"><a href="#">智能硬件</a></li>
+                    <li><a href="#">服務</a></li>
+                    <li><a href="#">社區</a></li>
+
+                    <!-- 創建彈出框 -->
+                    <div class="goodsInfo"></div>
+                </ul>
+            </div>
+
+            <!-- 創建搜素框容器 -->
+            <div class="searchWrapper">
+                <form class="search" action="#">
+                    <input class="searchInput" type="text">
+                    <button class="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 創建banner容器 -->
+    <div class="bannerWrapper">
+        <div class="banner w">
+            <ul class="bannerList">
+                <li>
+                    <a href="#">
+                        <img src="./img/banner01.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/banner02.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/banner03.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/banner04.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="bannerPointer">
+                <a class="active" href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="prevNext">
+                <a class="prev" href="javascript:;"></a>
+                <a class="next" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 固定定位工具欄 -->
+    <div class="backTop"></div>
+
+
+    <div style="margin-bottom: 10000px;"></div>
+</body>
+
+</html>

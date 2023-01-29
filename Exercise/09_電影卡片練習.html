@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Ex.Resource/css/reset.css">
+    <link rel="stylesheet" href="./Ex.Resource/font/css/all.css">
+    <style>
+        /* 設置外層容器 */
+        .outer{
+            width: 240px;
+            margin: 75px auto;
+            /* 設置陰影效果 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            
+        }
+
+        /* 設置圖片 -- 放置圖片溢出*/
+        .img-wrapper img{
+            width: 100%;
+            /* 因為圖片對準基線，因此防止bottom位置出現空白 */
+            vertical-align: bottom;
+        }
+
+        /* 設置標題 */
+        .info{
+            padding: 0 18px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        .info .title{
+            font-size: 18px ;
+            color: #717171;
+            margin: 13px 0 15px 0;
+        }
+        .info .subtitle i{
+            font-size: 12px;
+            margin: 0 4px 0 7px;
+        }
+        .info .intro{
+            margin: 18px 4px;
+            line-height: 20px;
+        }
+
+        /* 設置評分系統樣式 */
+        .star-wrapper{
+            height: 46px;
+            border-top: 1px solid #e9e9e9;
+            line-height: 46px;
+            padding: 0 16px;
+        }
+
+        /* 設置星星樣式 */
+        .star{
+            float: left;
+            color: #ddd;
+        }
+        .star .light{
+            color: #b9cb41;
+        }
+        .facebookLogo{
+            float: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 創建外層容器 -->
+    <div class="outer">
+        <!-- 創建圖片容器 -->
+        <div class="img-wrapper">
+            <!-- 設置圖片 -->
+            <img src="./Ex.Resource/01.jpg" alt="">
+        </div>
+        <!-- 創建內容區容器 -->
+        <div class="info">
+            <h2 class="title">
+                動畫電影
+            </h2>
+            <h3 class="subtitle">
+                <i class="fas fa-map-marker-alt"></i>
+                動畫
+            </h3>
+            <p class="intro">這是一部迪士尼的電影，非常非常非常非常非常好看</p>
+        </div>
+        <!-- 創建評分容器 -->
+        <div class="star-wrapper">
+            <!-- 創建星星 -->
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+
+            <!-- <a href="javascript:;"><span class="fab fa-facebook"></span></a> -->
+            <ul class="facebookLogo">
+                <li class="fab fa-facebook"></li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+           交集選擇器：
+              作用：選中同時複合多個條件的元素
+              語法：選擇器1選擇器2選擇器n{}
+              注意：以元素選擇器開頭
+         */
+        .red{
+            color:red;
+        }
+
+        div.red{
+            font-size: 30px;
+        }
+
+        .a.b.c{
+            color: blue;
+        }
+        /* 
+            選擇器分組（並集選擇器）：
+               作用：同時選擇多個選擇器對應的元素
+               語法：選擇器1, 選擇器2, 選擇器n{}
+               eg. h1, p, #id, .class {}
+         */
+        h1, span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="red">This is a <div class=""></div></div>
+    <p class="red">This is a p element.</p>
+    <div class="red2 a b c">This is div2</div>
+    <h1>Heading</h1>
+    <span>Span</span>
+
+</body>
+</html>

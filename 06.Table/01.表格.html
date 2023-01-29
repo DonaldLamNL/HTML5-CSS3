@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        使用表格來表示一些格式化的數據
+            如：課程表、人名單、成績單...
+        在網頁中也會需要使用表格，通過 table 標籤來創建表格
+
+        table > tr > td
+     -->
+
+     <table border = "1" width = "50%" align="center">
+        <!-- 在 table 中使用 tr 來表示表格中的一行，有幾個 tr 就表示有幾行 -->
+        <tr>
+            <!-- 在 tr 中使用 td 來表示一個單元格，有幾個 td 就表示有幾個單元格 -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <!-- rowspan 縱向合併單元格 -->
+            <td rowspan="2">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>B3</td>
+            <!-- colspan 橫向合併單元格 -->
+            <td colspan="2">C3</td>     
+        </tr>
+     </table>
+
+
+
+</body>
+</html>

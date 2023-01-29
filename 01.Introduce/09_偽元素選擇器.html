@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{font-size: 20px;}
+        /* 
+           偽元素：頁面中一些特殊且並不存在的元素
+              偽元素使用 :: 開頭
+
+              ::first-letter 表示第一個字母
+              ::first-line   表示第一行
+              ::selection    表示選中的內容
+
+         **   ::before    表示元素開首的位置
+         **   ::after     表示元素結尾的位置
+                  - 必須結合屬性 content 使用
+                  - 無法被選中
+
+         */
+         p::first-letter{
+             font-size: 50px;
+         }
+         p::first-line{
+             background-color: yellow;
+         }
+         p::selection{
+             background-color: yellowgreen;
+         }
+
+         div::before{
+             content: 'abc';
+             color: red;
+         }
+         div::after{
+             content: 'haha';
+             color: blue;
+         }
+    </style>
+</head>
+<body>
+    <q>Hello</q>
+    <div>Hello World</div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic voluptas asperiores voluptatem praesentium ex aliquid, quisquam modi facilis, consequuntur quam. Velit, quidem. Reprehenderit vel vero repellat commodi in. Illo totam accusamus nisi! Est ducimus, ratione consequuntur sequi excepturi, assumenda accusantium dolore dignissimos recusandae porro tenetur rem ad eaque aspernatur, quae ea id nulla praesentium labore beatae ab iusto illum molestiae expedita. Et magni eum, impedit ea obcaecati debitis excepturi magnam ipsa illo nobis dolore, quas deleniti aliquam temporibus ratione ut unde vitae labore saepe tempora laborum ipsum quasi quidem modi. Quibusdam aspernatur inventore magnam tenetur omnis quos tempora? Nam!</p>
+    
+</body>
+</html>

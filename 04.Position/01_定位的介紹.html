@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* 
+                Position定位：
+                    - 是一種更加高級的佈局手段
+                    - 通過定位，可以將元素擺放到任意位置
+                    - 使用position屬性來設置定位
+                    - 可選值：
+                        static 默認值 元素是靜止的
+                        relative 元素的相對定位
+                        absolute 元素的絕對定位
+                        fixed    固定定位
+                        sticky   黏滯定位
+
+                    - 相對定位：
+                        - 當position屬性值設置為relative則開啟相對定位 
+                        - 相對定位的特點：
+                            1. 如果不設置偏移量元素不會發生任何變化
+                            2. 相對定位是參照與元素在文檔流中的位置所定位的
+                            3. 相對定位會提升元素的層級（高於文檔流中的層級）
+                            4. 相對定位不會使元素脫離文檔流
+                            5. 相對定位不會改變元素的性質（原來位置）
+                            
+                    - 偏移量 (offset)：
+                        - 當元素開啟定位以後，可以通過偏移量來設置元素的位置 
+                            top
+                                - 定位元素與定位位置上邊的距離（垂直位置）
+                            bottom
+                                - 定位元素與定位位置下邊的距離（垂直位置）
+                            - 定位元素的垂直定位方向由 top 和 bottom 來控制
+                                通常情況下只會使用其中之一
+                                - top 值越大越往下移
+                                - bottom 值越大越往上移    
+
+                            left
+                                - 定位元素與定位位置左側的距離（水平位置）
+                            right
+                                - 定位元素與定位位置右側的距離（水平位置）
+                            - 定位元素的水平定位方向由 left 和 right 來控制
+                                通常情況下只會使用其中之一
+                                - left 值越大越往右移
+                                - right 值越大越往左移    
+             */
+             position: relative;
+             top: -200px;
+             left: 200px;
+             
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div style="margin-top: 1000px;"></div>
+</body>
+</html>

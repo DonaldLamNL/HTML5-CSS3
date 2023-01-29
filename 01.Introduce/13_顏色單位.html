@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            height: 200px;
+            width: 200px;
+            /* 
+                顏色單位：
+                    顏色名：
+                        - 在CSS中可以使用顏色名來設置顏色
+                          eg. red, orange, green, blue
+                        - 但是在CSS中直接使用顏色名是很不方便
+
+                    RGB值（光的三元素）RGBA值：
+                        - 通過調整3種不同顏色的濃度來調配出不同顏色
+                        - R-Red, G-Green, B-Blue
+                        - 每一種顏色的範圍在 0 - 255 (0% - 100%) 之間
+                    語法：rgb(紅色,綠色,藍色)
+                        - rgb(0,0,0)：黑色 / rgb(255,255,255)：白色
+                        - A-透明效果（不透明度）
+
+                    十六進制的RGB制：
+                        - 語法：#紅色綠色藍色
+                        - 顏色濃度：00-ff    
+                        - 如果兩兩重複可以簡寫 (#ff00ff --> #f0f)  
+
+                    HSL值 HSLA值：
+                        H-色相(0 - 360)
+                        S-飽和度/濃度(0 - 100%)
+                        L-亮度(0 - 100%)
+
+             */
+
+            background-color: rgb(255, 0, 0, 25%);
+            background-color:#bfa;
+            background-color: hsl(180, 50%, 70%);
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

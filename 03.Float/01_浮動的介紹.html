@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* 
+                通過浮動可以讓元素向其父元素的左側和右側移動
+                    使用 float 屬性來設置元素的浮動
+                        可選值：
+                            1. none 默認值 不浮動
+                            2. left 元素向左浮動
+                            3. right 元素向右浮動
+                    注意：元素設置浮動之後，水平佈局的等式不需要強制成立
+                         元素設置浮動之後，便會完全從文檔流中脫離，不再佔用文檔流的位置
+                         所以在元素下面且還在文檔流中的元素便會向上移動
+
+                    浮動的特點：
+                         1. 浮動元素會完全脫離文檔流，不再佔文檔流的空間
+                         2. 設置浮動以後，元素會向父元素的左側/右側移動
+                         3. 浮動元素默認不會從父元素中移出
+                         4. 浮動元素不會蓋住其他浮動元素
+                         5. 如果浮動元素的上面是沒有浮動的塊元素，則浮動元素不能上去
+                         6. 浮動元素不會超過上邊的一個浮動的兄弟元素（的高度），最多只會和他一樣高
+
+                         * 浮動元素目前主要的作用是讓頁面中的元素能夠水平排列
+                             通過浮動可以製作一些水平方向的佈局
+
+
+             */
+             float: left;
+        }
+        .box2{
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: right;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+</html>

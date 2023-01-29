@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            /* 
+                浮動元素不會蓋住文字，文字會自動環繞在浮動元素的周圍
+                    因此可以利用浮動元素讓文字環繞圖片
+
+             */
+            float: left;
+        }
+        .box2{
+            background-color: yellowgreen;
+
+            /* 
+                元素設置浮動後便會從文檔流中脫離，元素的一些特點也會發生變化
+
+                脫離文檔流特點：
+                    塊元素：
+                        1. 塊元素不再獨佔頁面一行
+                        2. 默認的塊元素的寬度和高度都被內容撐開
+
+
+                    行內元素：
+                        會變成塊元素，特點和塊元素一樣
+                        （脫離文檔流以後便不同區分塊元素和行內元素）
+
+
+             */
+            float: left;
+        }
+        .box3{
+            background-color: orange;
+        }
+        .s1{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed reiciendis placeat minima explicabo accusamus maiores quos, consequuntur unde dolore laboriosam illo eaque voluptates eius, maxime beatae natus modi corrupti ex veniam. Voluptates quibusdam consequuntur amet maxime reiciendis officiis repellendus, dolorem consequatur iusto quae consectetur voluptatum.</p> -->
+    <!-- <div class="box2">hello</div>
+    <div class="box3">hello</div> -->
+    <span class="s1">I am a span</span>
+</body>

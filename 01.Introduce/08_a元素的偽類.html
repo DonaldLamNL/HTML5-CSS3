@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+           :link 表示未訪問過的連接（其實是表示正常的連接，則包括訪問過及未訪問過）
+
+           :visited 表示已訪問過的連接
+           由於隱私的原因，所以visited這個偽類只能修改其顏色
+
+           :hover 表示鼠標移入
+           :active 表示鼠標點擊
+         */
+        a:link{
+            color:red
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover{
+            font-size: 50px;
+        }
+        a:active{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        超連結狀態：
+        1.未訪問過的連接
+        2.訪問過的連接
+
+    -->
+
+    <a href="http://www.google.com">已訪問</a>
+    <br><br>
+    <a href="#">未訪問</a>
+
+</body>
+
+</html>

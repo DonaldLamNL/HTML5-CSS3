@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: #bfa;
+            height: 600px;
+            /* 
+                默認情況下，父元素的高度被內容撐開
+             */
+        }
+        .inner{
+            height: 200px;
+            width: 100px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+               子元素是在父元素的內容中配列的，但如果子元素的大小超過父元素，則子元素會在父元素中溢出
+                   - 使用 overflow 屬性來設置父元素處理子元素的溢出
+                   - 可選值：
+                        1. visible 
+                           默認值，子元素會從父元素中溢出，在父元素外部顯示
+                        2. hidden
+                           溢出的內容將會裁剪不會顯示 
+                        3. scroll
+                           生成兩個滾動條，通過滾動條來顯示完整內容
+                        4, auto
+                           根據需要來生辰滾動條（不會生成多餘的滾動條）
+                           
+                   - overflow-x：單獨處理水平方向       
+                   - overflow-y：單獨處理垂直方向       
+             */
+             overflow: scroll;
+
+        }
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div> -->
+    <div class="box1"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta iste at quos eum adipisci? Assumenda est eum incidunt qui labore, vero ipsum adipisci, debitis deleniti magni, harum voluptate? Eveniet, assumenda nemo architecto ex odio non! Praesentium excepturi aliquam vero at! Pariatur inventore enim voluptas aliquam nihil quae perspiciatis fuga minima doloremque! Eum officiis facere, assumenda quam quisquam debitis veritatis aut excepturi ea commodi consectetur similique corrupti labore quia, molestiae quae, libero dolorum quas delectus suscipit tenetur a! Odit vel quidem laudantium reprehenderit exercitationem vitae aliquam nesciunt, deleniti ea excepturi quis tempora maiores officia sint! Magnam doloremque corrupti optio voluptas modi.</p></div>
+</body>
+</html>

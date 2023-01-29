@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Exercise/Ex.Resource/css/reset.css">
+    <style>
+
+        body{
+            height: 2000px;
+        }
+        
+        ul{
+            margin: 50px auto;
+            width: 1208px;
+            height: 48px;
+            background-color: #e8e7e3;
+
+            /* 
+                黏滯定位：
+                    - 當 position 屬性設置為sticky 時則開啟元素的黏滯定位
+                    - 黏滯定位和相對定位的特點基本一致
+                        不同的是黏滯定位可以在元素到達某一個位置的時候將其固定
+                    
+             */
+             position:sticky;
+             top: 0;
+        }
+
+        ul li{
+            float: left;
+        }
+
+
+        ul li a{
+            display: block;
+            width: 14.25;
+            padding: 0 40px;
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            line-height: 48px;
+        }
+
+        ul li a:hover{
+            background-color: #3f3f3f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="javascript:;">HTML/CSS</a></li>
+        <li><a href="javascript:;">Browser Side</a></li>
+        <li><a href="javascript:;">Server Side</a></li>
+        <li><a href="javascript:;">Programming</a></li>
+        <li><a href="javascript:;">XML</a></li>
+        <li><a href="javascript:;">Web Building</a></li>
+        <li><a href="javascript:;">Reference</a></li>
+    </ul>
+</body>
+</html>

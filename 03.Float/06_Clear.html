@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: right;
+        }
+
+        .box3{
+            clear: both;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 
+                由於box1的浮動導致box3的位置上移
+                    就是box3受到box1浮動的影響，位置發生改變
+
+                如果不希望某個元素因為其他浮動元素的影響而改變位置
+                    可以通過 clear 屬性來清楚浮動元素對當前元素所產生的影響
+
+                clear：清楚浮動元素對當前元素的影響
+                    可選值：
+                        1. left 清楚左側浮動元素對當前元素的影響        
+                        2. right 清楚右側浮動元素對當前元素的影響  
+                        3. both 清楚兩側最大影響的那一側浮動元素對當前元素的影響
+                    原理：
+                        設置清楚浮動以後，瀏覽器會自動為元素添加上一個外邊距
+                        使其不受其他元素的影響   
+                        （就是直接為 box3 增加一個 margin-top，但此值並不會顯示）       
+
+             */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2"></div>
+    <div class="box3">3</div>
+</body>
+</html>

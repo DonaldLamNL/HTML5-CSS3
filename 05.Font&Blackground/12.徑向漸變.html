@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 500px;
+            background-color: #bfa;
+            /* 
+                radial-gradient() 徑向漸變(放射性效果)
+                    - 默認情況下，徑向漸變的形狀是根據元素的形狀來計算的
+                        正方形 --> 圓形
+                        長方形 --> 橢圓形
+                        circle
+                        ellipse
+
+                    - 我們也可以手動指定徑向漸變的大小
+                        100px 100px     //漸變的大小是100px
+                        closest-side    //離最近的邊框距離，最近的邊
+                        farthest-side   //最遠的邊
+                        closest-corner  //最近的角
+                        farthest-corner //最遠的角
+
+                    - 也可以指定漸變的位置
+                        at 0 0      //在 0 0的位置為圓心
+                        at top bottom right left
+             */
+            background-image: radial-gradient(farthest-corner at 100px 100px, red, #bfa);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

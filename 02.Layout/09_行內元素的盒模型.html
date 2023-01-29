@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            background-color: yellow;
+            /*
+                行內元素的盒模型：
+                    - 行內元素不支持設置高度和寬度（不能用寬高設置其內容區）
+                    - 行內元素可以設置 padding border 和 margin，但垂直方向不會影響頁面佈局
+                     （但會蓋住一些元素）
+             */
+             
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: #bfa;
+        }
+        a{
+            /* 
+                display 用來設置元素顯示的類型
+                    可選值：
+                       1. inline 將元素設置為行內元素
+                       2. block  將元素設置為塊元素
+                       3. inline-block  將元素設置為行內塊元素
+                          行內塊元素：即可以設置寬高，又不會獨佔一行
+                       4. table
+                       5. none 將元素隱藏
+
+                visibility 用來設置元素顯示的狀態
+                    可選值：
+                       1. visible 默認值 元素在頁面中正常顯示
+                       2. hidden  元素在頁面中隱藏（依然佔據頁面的位置）
+                       3. 
+
+
+             */
+             display: inline-block;
+             visibility: visible;
+
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;">超連結</a>
+    <a href="javascript:;">超連結</a>
+
+
+    <span class="s1">I am a span</span>
+    <span class="s1">I am a span</span>
+    <div class="box1"></div>
+</body>
+</html>

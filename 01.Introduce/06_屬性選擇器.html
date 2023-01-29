@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+           [屬性名] 選擇含有指定屬性的元素
+           [屬性名=屬性值] 選擇含有指定屬性和屬性值的元素
+           [屬性名^=屬性值] 選擇屬性值中以指定值開頭的元素
+           [屬性名$=屬性值] 選擇屬性值中以指定值結尾的元素
+           [屬性名*=屬性值] 選擇屬性值中含有指定值的元素
+         */
+        p[title]{color:orange;}
+        *[title]{background-color: palegreen;}
+        p[title=abc]{font-weight:900;}
+        p[title^=abc]{word-spacing:1em;}
+        p[title$=abc]{font-style: oblique;}
+        p[title*=abc]{font-family: 'Times New Roman', Times, serif;}
+        
+    </style>
+</head>
+<body>
+    <h1 title="hello">Hello World</h1>
+    <p title="pppabc"> Lorem ipsum dolor sit amet.</p>
+    <p title="abc">abc lalalalalalala hello world</p>
+    <p title="abcppp">Lorem ipsum dolor sit.</p>
+    <p>efg</p>
+    <p title="fghjhgfabcfyujhg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, corrupti?</p>
+    
+</body>
+</html>

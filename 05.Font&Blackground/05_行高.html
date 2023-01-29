@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        行高 line-height
+            - 文字佔有的實際高度
+            - 可以通過line-height來設置屬性
+                行高可以是一個指定的大小 (px, em)
+                如果是一個整數的話則表示字體的指定倍數
+                (默認行高是1.33倍)
+        字體框
+            - 字體框就是字體存在的格子，設置font-size就是再設置字體框的高度
+
+        行高會在字體框的大小平均分配
+    -->
+    <style>
+        .font1{
+            font-size: 50px;
+            line-height: 200px;
+            border: red 2px solid;
+        }
+        .font2{
+            font-size: 50px;
+            line-height: 5;
+            border: green 2px solid;
+        }
+    </style>
+
+    <div class="font1">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <div class="font2">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+</body>
+</html>

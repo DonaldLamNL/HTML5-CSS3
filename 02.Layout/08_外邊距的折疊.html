@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 , .box2{
+            height: 200px;
+            width: 200px;
+            font-size: 100px;
+        }
+
+        /* 
+            垂直外邊距的重疊：
+               - 相鄰的垂直外邊距會發生重疊 （1.相鄰 2.垂直）
+               - 兄弟元素
+                   - 會取兩者之間的最大值（兩者皆為正值）
+                   - 特殊情況：
+                       1. 如果相鄰的外邊距一正一負，則取二者之和
+                       2. 如果相鄰的外邊距皆為負，則取兩者絕對值較大的
+                   - 兄弟元素之間的外邊距重疊，對開發是有利的，因此不需要處理
+
+
+
+               - 父子元素
+                   - 父子元素間的相鄰外邊距，子元素會傳遞給父元素（上外邊距）
+                   - 父子外邊距的折疊會影響折疊，因此需要處理
+
+
+         */
+        .box1{
+            background-color: blue;
+            /* 設置一個下外邊距 */
+            margin-bottom: -100px;
+        }
+        .box2{
+            background-color: red;
+            /* 設置一個上外邊距 */
+            margin-top: -100px;
+        }
+        .box3{
+            height: 199px;
+            width: 200px;
+            background-color: #bfa;
+            /* padding-top: 100px; */
+            border-top: 1px #bfa solid;
+ 
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 99px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+</body>
+</html>

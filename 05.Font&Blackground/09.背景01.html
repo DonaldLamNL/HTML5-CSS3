@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 600px;
+            height: 600px;
+            /* 
+                background-color 設置背景顏色
+             */
+            background-color: #bfa;
+            /* 
+                background-image 設置背景圖片
+                    - 可以同時設置背景圖片和背景顏色，則背景顏色會成為圖片的背景色
+                    - 如果背景圖片小於元素，則背景圖片會自動在元素中平鋪，將元素鋪滿
+                    - 如果背景圖片大於元素，則有一部分背景無法完全顯示
+             */
+            background-image: url(./image/a01_1.png);
+            /* 
+                background-repeat 設置背景的重複樣式
+                    可選值：
+                        repeat 默認值，背景會沿著元素的 x及y 軸重複
+                        repeat-x 沿著x軸重複
+                        repeat-y 沿著y軸重複
+                        no-repeat 不重複
+
+             */
+            background-repeat: no-repeat;
+            /* 
+                background-position 設置背景圖片的位置
+                    設置方式：
+                        1. 通過top left right bottom center 幾個表示方位的詞來設置背景位置
+                            使用方位詞時要指定兩個值則默認center
+                        2. 通過偏移量來指定背景圖片的位置
+                            水平方向偏移量  垂直方向偏移量
+             */
+             background-position: top left;
+             background-position: 100px 100px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

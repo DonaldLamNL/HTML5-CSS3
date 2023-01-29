@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: yellow;
+            width:100px;
+        }
+        .box2{
+            background-color: red;
+            width: 100px;
+        }
+        span{
+            background-color: #bbffaa;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        文檔流 (normal flow)
+           - 網頁是一個多層的結構
+           - 通過CSS可以分別為每一層設置樣式
+           - 而用戶只能看到最上一層
+           - 這些層中最低下的一層為——文檔流，文檔流就是網頁的基礎
+               而創建的元素默認都在文檔流中排列的
+           - 對於我們而言，元素主要有兩個狀態
+              1.在文檔流中
+              2.不在文檔流中（脫離文檔流）
+           
+           - 元素在文檔流中：
+             1.塊元素
+                - 獨佔一行（無論其寬度是多少）
+                   至上到下垂直排列
+                - 默認寬度是父元素的全部
+                - 默認高度則被子元素（內容）撐開
+             2.行內元素
+                - 不會獨佔一行，只佔自身大小
+                   至左向右水平排列
+                   如果一行中不能容納下全部行內元素，則元素會換到第二行繼續排列
+                - 行內元素的默認寬度和高度都是被元素（內容）撐開   
+    -->
+
+    <div class="box1">I am div 1</div>
+    <div class="box2">I am div 2</div>
+
+    <span>This is a span1</span>
+    <span>This is a span2</span>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="50%" align="center">
+        <!-- 
+            可以將一個表格分成三個部分
+                - 頭部 thead
+                - 主體 tbody
+                - 底部 tfoot
+
+            好處：
+                thead永遠表示頭部、tfoot永遠表示底部，即便編寫的時候tfoot寫在thead上面，仍然不變順序
+
+                - th 表示頭部的單元格       //自動加粗且居中
+         -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>合計</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th>日期</td>
+                <th>收入</td>
+                <th>支出</td>
+                <th>合計</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2000.1.1</td>
+                <td>500</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2000.1.1</td>
+                <td>500</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2000.1.1</td>
+                <td>500</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2000.1.1</td>
+                <td>500</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+       
+    </table>
+</body>
+</html>

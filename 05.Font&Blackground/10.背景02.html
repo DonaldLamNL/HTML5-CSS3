@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 600px;
+            height: 600px;
+            padding: 50px;
+            overflow: auto;
+            
+            background-color: #bfa;
+            background-image: url(./image/A04.jpg);  
+            background-repeat: no-repeat;
+
+            background-position: top left;
+
+            border: red 10px double;
+            /* 
+                background-clip 設置背景範圍    //可能希望邊框不包括背景
+                    可選值：
+                        1. border-box  默認值，背景會出現在邊框的下面
+                        2. padding-box 背景不會出現在邊框，只會出現在內容區和內邊塊
+                        3. content-box 背景只會出現在內容區
+             */
+            background-clip: padding-box;
+            /* 
+                background-origin 背景圖片偏移量的計算原點
+                    可選值：
+                        1. padding-box 默認值，background-position從內邊距處開始計算
+                        2. content-box 原點就在內容區開始計算
+                        3. border-box  原點從邊框開始計算
+             */
+            background-origin: content-box;
+            /* 
+                background-size 設置背景圖片大小
+                    可選值：
+                        1. 寬度 高度
+                            如果只寫一個，第二個值默認auto (等比例縮放)
+                        2. cover 圖片比例不變，將元素鋪滿 (從原點開始)
+                        3. contain 圖片比例不變，完整顯示圖片
+             */
+             background-size: contain ;
+
+        }
+        .box2{
+            /* 
+               background-attachmen 設置背景圖片是否跟隨元素移動
+                    可選值：
+                        1. scroll 默認值 背景圖片跟隨元素移動
+                        2. fixed 背景圖片會固定在頁面中，不會隨元素移動
+             */
+            width: 400px;
+            height: 1000px;
+            color: red;
+            /* background-color: orange; */
+            background-image: url(./image/a01_1.png);
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+        }
+
+        /* 
+            background 背景相關的簡寫屬性，所有背景相關都可以透過這個樣式設計
+         */
+        .box3{
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+            border: 10px double black;
+            /* 
+                size必須要寫在position後面，並且使用 / 隔開
+                clip也必須寫在origin後面
+                position > size
+                origin > clip
+             */
+            background: orange url(./image/a01_1.png)  center border-box padding-box no-repeat ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi a est cupiditate explicabo. Iusto quisquam veniam, dolores numquam, dicta fugiat sit aperiam mollitia quos commodi, magni architecto officia minima explicabo expedita! Magni quas esse fugiat quis temporibus tempora modi, similique nihil ad quam aperiam officiis, pariatur laboriosam? Doloremque, eaque?
+        </div>
+    </div>
+    <div class="box3">
+
+    </div>
+
+</body>
+</html>

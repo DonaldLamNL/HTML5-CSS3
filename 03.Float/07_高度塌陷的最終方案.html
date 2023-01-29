@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 10px red solid;
+            /* overflow: hidden; */
+            
+        }
+        /* 
+            ::after 偽類    表示元素的最後
+                默認after元素為行內元素     //不會獨佔一行，因此要將其轉換成塊元素
+        */
+        .box1::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .box2{
+            width: 100px;
+            height: 200px;
+            background-color: #bfa;
+            float: left;
+        }
+
+        
+        /* 方法一 */
+        /* .box3{
+            clear: both;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div>  但是div沒有用 -->
+        <!-- 
+            高度塌陷是表現上的問題，然而div是一個結構，所以這是用一個結構去處理表現上的問題
+            雖然可以解決問題，但不合適，我們希望CSS的問題由CSS解決
+
+         -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            樣式衝突：
+               當我們通過不同的選擇器（元素選擇器vs類選擇器）選中一個
+               相同的元素，和修改同一個樣式，但設置不同的值 ==> 便發生衝突
+
+               應用的樣式由選擇器的權重決定的
+
+            選擇器的權重：
+               內聯樣式       1,0,0,0
+               id選擇器       0,1,0,0
+               (偽)類選擇器    0,0,1,0
+               元素選擇器      0,0,0,1
+               通配選擇器      0,0,0,0       *{}
+               繼承是樣式      沒有優先級
+
+            - 比較的時候，需要將所有選擇器的優先級進行相加計算，最後優先級越高則越優先顯示
+                 eg.
+                    div#box1 的優先級 = 1+100 = 101
+                    box1 = 100 < div#box1
+                    Hence, 現實 div#box1
+
+            - 分組選擇器是單獨計算的 
+            - 選擇器的累加不會超過其最大餓數量值
+                 eg. 類選擇器再高也不會高過id選擇器的優先級
+            - 如果優先級計算後相等則優先使用靠下的樣式（覆蓋掉）
+
+            - 可以在某一個樣式的最後添加 !important 去獲得優先級，甚至超過內聯樣式
+               注意：開發中一定要慎用（改起來的的時候很麻煩）
+         */
+        div#box1{
+            background-color: purple ! important;
+        }
+        .red{
+            background-color: red;
+        }
+
+        #box1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="red" style="background-color: rosybrown;">
+        I am a div
+        <span>I am a span in div</span>
+    </div>
+</body>
+</html>

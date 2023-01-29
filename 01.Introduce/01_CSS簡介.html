@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--
+         第二種方式（內部樣式表）：
+            - 將樣式編寫到head標籤裡
+     -->
+
+     <style>
+
+          p{color: blue; 
+          font-size: 60px;}
+
+     </style>
+
+
+</head>
+<body>
+    <!--
+        網頁三部分：
+            結構(HTML)
+            表現(CSS)
+            行為(JavaScript)
+        CSS（層疊樣式表）
+            - 網頁實際上是一個多層的結構，通過CSS能把網頁的每一層設計樣式，最終用戶看到的是最上面的一層
+            - CSS用來設置網頁中元素的樣式
+    -->
+
+    <!--
+     ** 不推薦  
+        第一種方式（內聯樣式/行內樣式）：
+            - 在標籤內部通過 style 屬性設計元素的樣式
+            格式：標籤 = "樣式名 : 樣式值 ; "
+            - 問題：
+                此方法只能對一個標籤生效，如果希望影響到多個元素，必須在每個標籤都複製一遍，修改時不方便
+          
+    -->
+    <!-- <p style="color:red; font-size: 30px;">Hello World 1</p> -->
+
+    <p>Hello World 2 </p>
+</body>
+</html>

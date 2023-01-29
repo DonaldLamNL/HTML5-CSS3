@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button_01:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url(./Ex.Resource/button/link.png);
+        }
+        .button_01:hover{
+            background-image: url(./Ex.Resource/button/hover.png);
+        }
+        .button_01:active{
+            background-image: url(./Ex.Resource/button/active.png);
+        }
+        /* 
+            圖片屬於網頁中的外部資源，外部資源都需要瀏覽器單獨發送請求加載
+                瀏覽器加載外部資源時，是按需加載的，用的時候就加載，不用就不會加載
+                像上面的練習，link會優先加載，而hover和active會在指定狀態觸法時加載
+        */
+
+
+
+        .button_02:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url(./Ex.Resource/button/btn.png);
+        }
+        .button_02:hover{
+            background-image: url(./Ex.Resource/button/btn.png);
+            background-position: -93px 0;
+        }
+        .button_02:active{
+            background-image: url(./Ex.Resource/button/btn.png);
+            background-position: -186px 0;
+        }
+        /* 
+            解決圖片閃爍問題：
+                可以將多個小圖片保存到一個大圖片中，這樣圖片會同時加載到網頁中
+                即可避免出現閃爍問題
+                然後通過 background-position 來切換顯示的圖片
+            * 這個技術在網頁中應用廣泛，稱為 CSS-Sprite 雪碧圖
+        */
+
+        /*  
+            雪碧圖的使用步驟：
+                1. 確認要使用的圖標
+                2. 測量圖標的大小
+                3. 根據測量結果來創建一個元素
+                4. 將雪碧圖設置為背景圖片
+                5. 設置一個偏移量以顯示正確的圖片
+        */
+        .box1{
+            width: 128px;
+            height: 46px;
+            background-image: url(./Ex.Resource/amazon-sprite_.png);
+            background-position: 0 0;
+        }
+        .box2{
+            width: 42px;
+            height: 30px;
+            background: url(./Ex.Resource/amazon-sprite_.png) -58px -338px;
+        }
+        /*  
+            雪碧圖的特點：
+                - 一次性將多個圖片加載進頁面，降低請求的次數，加快訪問速度，提升用戶體驗
+        */
+
+    </style>
+</head>
+<body>
+    <a href="javascript:;" class="button_01"></a>
+    <p>解決方法：</p>
+    <a href="javascript:;" class="button_02"></a>
+    <p>雪碧圖應用展示：</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

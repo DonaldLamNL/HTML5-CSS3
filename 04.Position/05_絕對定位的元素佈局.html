@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            position: relative;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            position:absolute;
+            margin: auto;
+
+            /* 
+                水平佈局
+                    left + margin-left + border-left + padding-left + width 
+                    + margin-right + border-right + padding-right + right
+                    = 包含塊的 width
+
+                - 當開啟絕對定位後：
+                    水平方向的佈局等式需要加上 left 和 right 的值
+                        此時規則和之前一樣，只是多添加了兩個值：
+                            - 當發生過度約束時（不等式）且九個值沒有一個 auto
+                               ->則自動調整right以使等式滿足
+                            - 如果有auto
+                               ->則自動調整auto的值以使等式滿足
+                            -可設置 auto 的值：
+                                left right width margin    
+
+                            - 默認值：
+                                由於 left 和 right 的默認值皆為 auto 
+                                所以如果不指定 left 和 right，則等式不滿足時便自動調整這兩個值
+
+                垂直方向的佈局等式也必須要滿足
+                    top + bottom + height + margin-top/bottom 
+                    + padding-top/bottom + border-top/bottom
+                    = 包含塊的 height 
+
+                順序為（水平垂直皆適宜）：
+                width(height) > right(bottom) >= left(top) > margin / padding / border 
+             */
+             
+             top: auto;
+             left: 0;
+             bottom: auto;
+             right: 0;
+
+        }
+
+    </style>
+</head>
+<body>  
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

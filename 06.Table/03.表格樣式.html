@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            /* 
+                border-spacing: 指定邊框之前的距離 
+                    - 但是邊框之間會重疊
+             */
+            border-spacing: 10px; 
+            /* 
+                border-collapse: 設置邊框的合併
+                    - 設置完 border-collapse 之後 border-spacing 便會無效
+             */
+            border-collapse: collapse;
+
+
+        }
+
+        /* 
+            如果表格中沒有使用 tbody 而是直接使用 tr 
+                那麼瀏覽器會自動創建一個 tbody 並且將 tr 全都放進 tbody 中
+                - 所以 tr 不是 table 的子元素
+                    因此無法通過子元素選擇 tr
+            table > tr:nth-child(even){
+                background-color: #bfa;
+            }
+        
+         */
+        tbody > tr:nth-child(even){
+            background-color: #bfa;
+        }
+
+        td{
+            border: 1px solid black;
+            height: 100px;
+            /* 
+                默認情況下，td中的元素是垂直居中的
+                    可以透過 vertical-align 來修改
+             */
+            vertical-align: center;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+
+            /*
+                display: table-cell; 將元素設置為table 
+                    雖然不是塊元素，不會獨佔頁面一行，但其他元素並不會與其並行，只能和同樣的元素在一行
+                
+             */
+            display: table-cell;
+
+            vertical-align: middle;         /* center對塊元素不生效 */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    aaa
+    <table>
+        <tr>
+            <td>學號</td>
+            <td>姓名</td>
+            <td>性別</td>
+            <td>年齡</td>
+            <td>住址</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>家寶</td>
+            <td>男</td>
+            <td>18</td>
+            <td>旺角</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>修端</td>
+            <td>男</td>
+            <td>28</td>
+            <td>觀塘</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>一心</td>
+            <td>女</td>
+            <td>21</td>
+            <td>中環</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>英秀</td>
+            <td>女</td>
+            <td>24</td>
+            <td>北角</td>
+        </tr>
+    </table>
+</body>
+</html>

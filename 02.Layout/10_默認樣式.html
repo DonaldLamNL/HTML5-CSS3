@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        重置樣式表：專門用來對瀏覽器的樣式進行重置
+            reset.css 直接去除調瀏覽器的默認樣式
+            normalize.css 對默認樣式進行統一
+     -->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <style>
+
+        /* 
+            默認樣式：
+                - 通常情況下，瀏覽器都會為元素設置一些默認樣式
+                - 默認樣式的存在會影響到頁面的佈局，通常情況下在編寫網頁時要去除調默認樣式（PC端）
+                - 三種方法：
+                    1. 直接對每一個元素進行調整
+                    2. 通過*{}的方法進行調整
+                 ** 3. 引入reset.css / normalize.css進行調整
+
+         */
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+
+        /* body{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding:0;
+            去除項目符號
+             list-style: none;
+        } */
+
+
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+
+
+       
+         
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+    <p>I am a paragraph</p>
+    <p>I am a paragraph</p>
+    <p>I am a paragraph</p>
+
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 
+                絕對定位：
+                    - 當元素的position屬性值設置為absolute，便開啟元素的絕對定位
+                    - 絕對定位的特點：
+                        1. 如果不設置偏移量，元素的*位置*不會發生變化
+                        2. 元素會在文檔流中脫離
+                        3. 絕對定位會改變元素的性質（因為脫離文檔流了）
+                           行內變成塊，寬的內容會被撐開
+                        4. 絕對定位會使元素提升層級
+                        5. 絕對定位元素是相對與其包含塊進行定位
+
+                            包含塊 (containing block)：一定要是塊元素
+                                - 正常情況下：
+                                    包含塊就是離當前元素最近的祖先元素
+                                - 絕對定位的情況下：    
+                                    包含塊就是離當前元素最近且開啟定位的祖先元素
+                                        如果所有祖先元素都沒有開啟定位，則根元素就是他的包含塊
+                                - html（根元素、初始包含塊）        
+
+             */
+
+             position: absolute;
+             left: 0;
+             top: 0;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            /* position: relative; */
+        }
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: aliceblue;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    <div class="box3">3</div>
+    
+    <div style="margin-top: 1000px;"></div>
+</body>
+</html>

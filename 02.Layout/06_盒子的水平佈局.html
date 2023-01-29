@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+        .inner{
+            /* width值默認auto */
+            width: 1000px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 0 auto;
+            
+            /* 
+                元素水平方向的佈局：
+                    元素在其父元素中水平方向的位置由以下屬性決定：
+                        margin-left
+                        border-left
+                        padding left
+                        width
+                        padding-right
+                        border-right
+                        margin-right
+
+                    一個元素在其父元素中水平佈局必須滿足以下的等式
+                     = margin-left + border-left + padding-left + width + 
+                       padding-right + border-right + margin-right    
+                    (= 0 + 0 + 0 + 200 + 0 + 0 + 0 = 800)  
+                     = 其父元素內容區的寬度（必須等於）
+                     如果等式不成立，則稱為過度約束，等式則自動調整
+                        - 調整方式：
+                            如果7個值皆沒有auto，則瀏覽器會自動調整margin-right，使等式成立
+                        七個值中有三個都可以設置為auto：
+                            1. width
+                            2. margin-left
+                            3. margin-right
+                            - 如果某個值為auto，則自動調整該值使等式成立
+                             (= 0 + 0 + 0 + auto + 0 + 0 + 0 = 800) --> width = 800
+
+                            - 如果將 width 和一個 margin皆設置為 auto 則 width 會調到最大，margin則為0
+                            - 如果將三個值都設為 auto 則寬度為最大，margin皆為0
+                            - 如兩個 margin 的值皆為 auto 則會將兩者調整為相同的值
+                                因此通常用這個方法讓一個元素在其父元素居中
+                                eg. width : xxx ; margin : 0 auto 
+                                                  (top and bottom : 0, left and right : auto);
+
+                            - 如果將width值設置大於box1的總寬度，則margin-right調整成負數讓等式成立 
+                                eg. (0 + 0 + 0 + 1000 + 0 + 0 + auto = 800) --> auto = -200
+)                 
+
+
+             */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

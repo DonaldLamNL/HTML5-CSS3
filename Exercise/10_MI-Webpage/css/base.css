@@ -1,0 +1,28 @@
+/* 公共樣式 */
+.clearfix::before, 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 去除超連結的下劃線 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+    color: #333;
+    min-width: 1226px;
+}
+
+
+/* 設置一個類專門表示中間容器的寬度 */
+.w{
+    /* 固定容器的寬度 */
+    width: 1226px;
+    /* 設定容器居中 */
+    margin: 0 auto;
+}

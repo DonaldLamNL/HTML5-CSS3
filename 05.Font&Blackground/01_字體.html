@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            font-face 可以將服務器的字體直接提供給用戶去使用
+                問題：
+                    1. 加載速度慢
+                    2. 版權
+                    3. 字體格式
+         */
+        @font-face {
+            /* 指定字體名字 */
+            font-family: 'myfont';
+            /* 服務器中字體的路徑 */
+            src: url(./font/ZCOOLKuaiLe-Regular.ttf) format("truetype");
+        }
+
+
+        p{
+            /* 
+            字體相關樣式 
+                color 用來設置字體顏色
+                font-size 字體大小
+                    相關單位：
+                        em   相當於當前元素的font-size
+                        rem  相當於根元素的font-size
+                font-family 字體族（字體的格式）
+                    可選值：
+                        serif      襯線字體
+                        sans-serif 非襯線字體
+                        monospace  等寬字體
+                        cursive    草寫字體
+                        fantasy    虛幻字體
+                            - 指定字體的類別，瀏覽器會自動使用該類別下的子體
+                    - font-family 可以同時指定多個字體，多個字體間使用 , 隔開
+                       字體生效時優先使用第一個，第一個無法顯示則用第二個
+            */
+            color: red;
+            font-size: 30px;
+            /* font-family:  'Courier New', Courier, monospace;; */
+            font-family: myfont;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hello, how are you?
+    </p>
+</body>
+</html>

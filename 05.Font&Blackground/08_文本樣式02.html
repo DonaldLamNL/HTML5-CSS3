@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+
+            /* 
+                text-decoration 設置文本修飾
+                    可選值：
+                        none      什麼都沒有
+                        underline 下劃線
+                        line-through 刪除線
+                        overline  上劃線
+
+            */
+            text-decoration: underline red dotted;
+        }
+        .box2{
+            width: 500px;
+            /* 
+                white-space：設置網頁如何處理空白
+                    可選值：
+                        normal 默認值 正常
+                        nowrap 不換行
+                        pre    保留
+            */
+            white-space: nowrap;
+            overflow: hidden;
+            /* 增加省略號 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ad, incidunt esse ducimus iusto omnis quibusdam. Voluptas quisquam amet distinctio.
+    </div>
+    <div class="box1">
+        Hello World
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+
+        audio標籤：
+            - 向頁面中引入音頻文件
+            - 音視頻文件引入時，默認情況下用戶是無法自己控制播放停止
+         
+        屬性：
+            controls 是否讓用戶控制播放    
+            autoplay 音頻自動播放
+                - 打開頁面時自動播放
+                - 但目前為止大部分瀏覽器都不會自動播放
+            loop 音頻是否循環播放    
+            
+    -->
+    <!-- <audio src="./resources/《失去才懂》.mp3"  controls autoplay loop></audio> -->
+
+    <!-- 
+        除了通過src指定外部文件的路徑以外，還可以通過source來指定文件的路徑 
+            作用1：如果舊的瀏覽器不支持音頻，則其會忽略 audio 和 source，但文字其瀏覽器是能讀取
+            結果：如果瀏覽器支持音頻則直接顯示，而如果瀏覽器不支持則會顯示文字
+
+            作用2:此方法能加入多個 source
+            結果：如果某些瀏覽器不支持mp3格式，便會忽略和播放audio中的第二個 source 音頻（其瀏覽器支持的格式）
+            
+    -->
+    <audio controls>
+        <!-- 對不起，您的瀏覽器不支持播放音頻，請升級瀏覽器。 -->
+        <source src="./resources/《失去才懂》.mp3"> 
+        <source src="./resources/《失去才懂》.ogg">  
+        <embed src="./resources/《追光者》.mp3" type="audio/mp3">
+     
+    </audio>
+
+
+    <!--
+
+        video標籤： 加入視頻
+            同音頻一樣
+
+    -->
+
+    <!-- <video src="./resources/EP903.mp4" controls autoplay></video> -->
+
+    <video controls>
+        <source src="./resources/EP903.webm">
+        <source src="./resources/EP903.mp4">
+        <embed src="./resources/EP903.mp4" type="video/mp4">    
+
+            
+    </video>
+
+    
+    <iframe src="https://www.bilibili.com/video/BV1XJ411X7Ud?p=26" width="800" height="200" allowfullscreen:="true" frameborder="0"></iframe>
+
+
+
+
+</body>
+</html>

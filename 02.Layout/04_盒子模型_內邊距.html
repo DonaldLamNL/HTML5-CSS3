@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: orange solid 5px;
+
+            /* 
+                內邊距：內容區與邊塊的距離
+                    - 速個方向的內邊距：
+                        padding-(top/left/bottom/right)
+
+                    - 內邊距會影響到盒子的大小
+                    - 背景顏色延伸到內邊距上   
+
+
+                一個盒子的可見區大小由 內容區 內邊距 邊框 共同覺得
+                    因此計算盒子大小要將三個區域加到一起    
+             */
+             padding: 100px;
+
+             /* 
+                 padding內邊距的簡寫屬性可以同時指定四個方向的內邊距（與border規則一樣）
+              */
+        }
+
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

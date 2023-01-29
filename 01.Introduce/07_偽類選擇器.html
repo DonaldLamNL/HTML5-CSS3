@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+           偽類：不存在的類/特殊的類
+              - 用來描述一個元素的特徵/狀態
+                eg. 第一個子元素、被點擊的元素、鼠標移動的元素
+              - 一般情況下都使用 : 開頭
+                :first-child 第一個子元素
+                :last-child  最後的子元素
+                :nth-child() (x)第 x 個子元素
+                             如果寫(n)則 0-無窮 個子元素
+                             (odd)/(2n+1) odd numbers
+                             (even)/(2N)  even numbers
+              - 以上偽類都是根據所有的子元素排序（不是第一個li，是所有元素的第一個）      
+                :first-of-type
+                :last-of-type
+                :nth-last-of-type()
+                   -與上述的偽類公用一樣，不過是以該指定的子元素為排序（第一個li） 
+
+              - :not() 否定偽類
+                將除了複合條件的元素去除 
+                () 為 其指定元素中的條件          
+                               
+         */
+        ur>li:first-child {
+            color: red;
+        }
+        ur>li:last-child {
+            color: blue;
+        }
+        ur>li:nth-child(3){
+            color:orange
+        }
+        ur>li:first-of-type{
+            background-color: blue;
+        }
+        ur>li:not(:nth-of-type(odd)){background-color: chartreuse;}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <ur>
+        <span>This is a span</span>
+        <li>Zero</li>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Forth</li>
+        <li>Fifth</li>
+    </ur>
+
+</body>
+
+</html>

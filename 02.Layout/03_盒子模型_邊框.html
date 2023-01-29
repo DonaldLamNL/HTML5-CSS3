@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* 
+                邊框(border)
+                    - 邊塊的大小會影響整個盒子的大小
+                    - 設置邊塊最少三個樣式：
+                        1.邊塊寬度 border-width
+                        2.邊塊顏色 border-color
+                        3.邊塊樣式 border-style
+             */   
+
+
+
+             /* 
+                border-width：設置邊框寬度
+                   默認值：3px
+                    1.四個值： 上 右 下 左
+                    2.三個值： 上 左右 下
+                    3.兩個值： 上下 左右
+                    4.一個值： 上下左右
+                   border-xxx-width : top / right / bottom / left
+                        用來單獨設置邊框一個邊的寬度（還有顏色和樣式都一樣）
+
+                border-color：設置邊框顏色（規則同上）
+                    默認值：黑色  
+
+                border-style：設置邊框樣式（規則同上）
+                    默認值：none
+                    1.solid  - 實線
+                    2.dotted - 點狀虛線
+                    3.dashed - 線狀虛線
+                    4.double - 雙線      
+
+              */
+             border-width: 10px 15px;
+             border-color: orange red green blue;
+             border-style: solid dotted dashed double;   
+             border-right: none;     
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

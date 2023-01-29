@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 
+                長度單位：
+                像素
+                   - 屏幕（顯示器）是有一個個小點構成的
+                   - 不同的屏幕像素大小是不一樣的（像素越小越清晰）
+                   - 所以同樣的200像素在不同的設備下顯示效果不一樣
+
+                百分比
+                   - 也可以將屬性值設置為相對於父元素屬性的百分比
+                   - 可以使子元素跟隨父元素所改變
+
+                em
+                   - em是相對於元素的字體大小來計算的
+                   - 1 em = 1 font-size（默認一個字體大小為16px）
+                   - 因此 em 會根據字體大小而改變
+
+                rem
+                   - rem是相對於根元素的字體大小來計算的
+                     
+
+             */
+            width: 200px;
+            height:200px;
+            background-color: orange;
+        }
+
+        .box2{
+             width: 50%;
+            height: 50%;
+            background-color: palegreen;
+        }
+
+        .box3{
+            font-size: 20px;
+            width: 10em;
+            height: 10em;
+            background-color: red;
+        }
+                
+        html{
+            font-size: 100px;
+        }        
+        .box4{
+            background-color: blue;
+            width: 10rem;
+            height: 10rem;
+            /* rem是參照html的 */
+        }        
+    
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

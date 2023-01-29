@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表單：
+            - 表單用於提交數據
+            - 在網頁中也可以使用表單，網頁中的表單用於本地的數據提交給遠程的服務器
+            - 使用 form 標籤來創建表單
+
+            - form 中必須要有的屬性: 
+                action 指定的是表單要提交的服務器地址
+
+    -->
+
+    <form action="./target.html">
+        <!-- 
+            文本框
+                - 數據如果要提交到服務器，必須為元素指定一個 name 屬性值
+        -->
+        文本框 
+        <input type="text" name="username">
+        <br><br>
+
+        <!-- 
+            密碼框 
+        -->
+        密碼框
+        <input type="password" name="password">
+        <br><br>
+
+        <!--  
+            單選按鈕
+                - 選擇框必須要指定value屬性，最終會作為用戶填寫的值傳遞給服務器
+                - checked 屬性可以將單選按鈕設置為默認選中
+        -->
+        單選按鈕
+        <input type="radio" name="a">
+        <input type="radio" name="b" checked>
+        <br><br>
+
+        <!-- 多選框 -->
+        多選框
+        <input type="checkbox" name="test" value="1">
+        <input type="checkbox" name="test" value="2">
+        <input type="checkbox" name="test" value="3" checked>
+        <br><br>
+
+        <!-- 下拉列表 -->
+        <select name="haha" id="">
+            <option value="i">選項一</option>
+            <option value="ii">選項二</option>
+            <option value="iii" selected>選項三</option>
+        </select>
+        <br><br>
+
+        <!-- 提交按鈕 -->
+        <input type="submit" value="註冊">
+    </form>
+</body>
+</html>

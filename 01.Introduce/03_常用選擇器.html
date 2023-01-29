@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* 
+            元素選擇器：
+               作用：通過標籤名來選中指定元素
+               語法：標籤名{}
+        */
+
+        p{
+            color: red;
+            font-size: larger;
+        }
+
+        /* 
+            id選擇器：
+               作用：通過id名來選中指定元素
+               語法：#id{}
+         */
+
+         #green{
+             color: green;
+         }
+         /* 
+            class選擇器：
+               它是一個標籤的屬性，與 id 類似，不同的是 class 可以重複使用
+               因此可以通過class來分組 .class{a b}
+            ** 能同時為一個元素加入多個 class
+               作用：根據元素中的 class 屬性值選中一組元素
+               語法：.class{}
+          */
+
+          .blue{
+              color: blue ;
+          }
+
+          .bigger{
+              font-weight: bolder;
+              font-size: 30px;
+          }
+
+          /* 
+            通配選擇器：
+               作用：選中頁面中所有元素
+               語法：*{}
+           */
+
+           *{
+               font-style: oblique;
+           }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id="green">Hello world</p>
+    <p class="bigger">Lorem, ipsum.</p>
+    <p class="blue">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <p class="blue bigger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae?</p>
+    <p>hello</p>
+
+    
+</body>
+</html>

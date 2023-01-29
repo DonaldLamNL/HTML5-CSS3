@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fa/css/all.css">
+    <style>
+        ul li{
+            list-style: none;
+        }
+        li::before{
+            /* 
+                通過偽元素來設置圖標字體步驟：
+                    1. 找到圖標元素，通過before/after引入
+                    2. 在content中設置字體的編碼
+                    3. 設置字體的樣式：
+                        fab
+                        font-family: 'Font Awesome 5 Free';
+
+                        fas
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+            */
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <i class="fas fa-cat"></i> -->
+    <ul>
+        <li>Hello World 1</li>
+        <li>Hello World 2</li>
+        <li>Hello World 3</li>
+        <li>Hello World 3</li>
+        <li>Hello World 3</li>
+        <li>Hello World 3</li>
+        <li>Hello World 3</li>
+        <li>Hello World 4</li>
+    </ul>
+
+    <span class="fas fa-bell"> </span>
+    <!-- 
+        通過實體來使用圖標字體：
+            class="fas/fab" &#x圖標編碼;
+     -->
+    <span class="fas">&#xf002</span>
+
+
+
+</body>
+</html>

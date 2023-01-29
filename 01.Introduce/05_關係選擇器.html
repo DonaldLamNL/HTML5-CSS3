@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+           子元素選擇器：
+              作用：選中指定父元素裡的子元素
+              語法：父元素 > 子元素 {}
+         */
+        p > em {
+            color: red;
+        }
+
+        /* 
+           後代元素選擇器：
+              作用：選中指定元素內的所有指定後代元素（範圍更廣）
+              語法：祖先元素 後代元素 {}
+         */
+         div.a span {
+             color: blue;
+         }
+
+         div.a > p > span{
+             color: orange;
+         }
+         /* 
+           兄弟元素選擇器：
+              語法：前一個 + 下一個（一定要是下一個，緊接著的）
+              語法：前一個 ~ 下面的所有
+          */
+          
+          span ~ strong{
+              background-color: cornflowerblue;
+          }
+
+          span + strong{
+              background-color:coral;
+          }
+
+    </style>
+</head>
+<body>
+    <!--
+        關係元素：
+        父元素
+           - 直接包含子元素
+           eg. div 是 p 的父元素
+        子元素
+           - 直接被父元素包含的元素
+           eg. span 是 div 的子元素
+        祖先元素
+           - 直接或間接包含後代的元素
+           eg. div 是 em 和 p 的祖先元素
+        後代元素
+           - 直接或間接被祖先元素包含的元素
+           eg. em 和 p 都是 div 的後代元素
+        兄弟元素
+           - 擁有相同父元素的元素
+           eg. span 和 p 是兄弟元素
+    -->
+    
+    <div class="a">
+        This is a div.
+        <p>This is a p in div
+            <br>
+            <em>This is a em in p</em>
+            <br>
+            <span>This is a span in p</span>
+        </p>
+        <span>This is a span in div</span>
+    </div>
+
+    <div>
+        <span>I am the other span in div</span>
+        <strong>I am a strong element1</strong>
+        <strong>I am a strong element2</strong>
+        <strong>I am a strong element3</strong>
+        <strong>I am a strong element4</strong>
+    </div>
+
+
+
+</body>
+</html>
